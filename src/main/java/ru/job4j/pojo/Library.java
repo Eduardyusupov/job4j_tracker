@@ -4,7 +4,7 @@ public class Library {
 
     public static void main(String[] args) {
         Book firstBook = new Book(100, "HowToDrive");
-        Book secondBook = new Book(320, "Clean Code");
+        Book secondBook = new Book(320, null);
         Book thirdBook = new Book(240, "How to cook");
         Book fourthBook = new Book(100000, "War and peace");
         Book[] books = new Book[4];
@@ -24,9 +24,8 @@ public class Library {
         }
         for (int i = 0; i < books.length; i++) {
             Book book = books[i];
-            if (book.getName().equals("Clean Code")) {
+            if ("Clean Code".equals(book.getName())) {
                 System.out.println("Number of pages = " + book.getPageNumbers() + " Book name = " + book.getName());
-
             }
         }
     }
