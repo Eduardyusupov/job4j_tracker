@@ -4,7 +4,7 @@ public class Library {
 
     public static void main(String[] args) {
         Book firstBook = new Book(100, "HowToDrive");
-        Book secondBook = new Book(320, null);
+        Book secondBook = new Book(320, "Clean Code");
         Book thirdBook = new Book(240, "How to cook");
         Book fourthBook = new Book(100000, "War and peace");
         Book[] books = new Book[4];
