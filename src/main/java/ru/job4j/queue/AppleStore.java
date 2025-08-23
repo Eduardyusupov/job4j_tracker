@@ -12,9 +12,6 @@ public class AppleStore {
     }
 
     public String getLastHappyCustomer() {
-        if (count <= 0) {
-            return null;
-        }
         Customer lastHappy = null;
         for (int i = 0; i < count; i++) {
             lastHappy = queue.poll();
@@ -23,9 +20,6 @@ public class AppleStore {
     }
 
     public String getFirstUpsetCustomer() {
-        if (count <= 0) {
-            return null;
-        }
         int firstUnhappyIndex = count + 1;
         Customer firstUnhappy = null;
         for (int i = 0; i < firstUnhappyIndex; i++) {
