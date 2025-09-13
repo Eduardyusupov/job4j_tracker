@@ -18,6 +18,11 @@ public class Item {
         this.name = name;
     }
 
+    public Item(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) {
@@ -30,11 +35,6 @@ public class Item {
     @Override
     public int hashCode() {
         return Objects.hashCode(name);
-    }
-
-    public Item(int id, String name) {
-        this.id = id;
-        this.name = name;
     }
 
     public int getId() {
